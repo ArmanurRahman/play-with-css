@@ -132,7 +132,7 @@ body {
     outline: none;
 }
 
-.backdriop {
+.backdrop {
     position: fixed;
     display: none;
     top: 0;
