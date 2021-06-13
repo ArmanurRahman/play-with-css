@@ -6,6 +6,9 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: calc(100vh - 3.5rem - 6rem);
+}
 .main-header {
     background: #2ddf5c;
     padding: 0.5rem 1rem;
@@ -37,12 +40,16 @@ body {
 .main-header__brand img {
     height: 100%;
 }
-
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
+}
+@media (min-width: 40rem) {
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 122px);
+        vertical-align: middle;
+    }
 }
 
 .main-nav__items {
@@ -175,7 +182,6 @@ body {
 .mobile-nav__item a {
     font-size: 1.5rem;
 }
-
 .toggle-button {
     width: 3rem;
     background: transparent;
@@ -184,6 +190,11 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
+}
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
 }
 
 .toggle-button:focus {
